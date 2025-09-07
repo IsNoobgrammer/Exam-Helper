@@ -1,0 +1,68 @@
+# Exam-Helper Configuration File
+# This file contains all API keys and configuration settings for the application
+
+# API Keys Configuration
+api_keys:
+  # Pinecone Vector Database API Key
+  pinecone: "pcsk_6KAu86_9Zzepx9S1VcDmLRmBSUUNpPf4JRbE4BaoVmk36yW9R4nkjutPiZ3AjZvcyL4MVx"
+  
+  # Google Generative AI API Key (for embeddings)
+  google: "AIzaSyBRlCiLMACybpvcSsdEq-CCO2WwuqWkLZ8"
+  
+  # Additional Google API Key (for image processing)
+  google_vision: "AIzaSyBRlCiLMACybpvcSsdEq-CCO2WwuqWkLZ8"
+  
+  # Mistral AI API Key (fallback model)
+  mistral: "RScM7WQKY4RtCVOOj49MWYqRVQB3zl9Y"
+  
+  # Groq API Key (user-provided via UI)
+  groq: null  # This will be set by user input
+
+# Application Configuration
+app_config:
+  # Page configuration
+  page_title: "Bhala Manus"
+  page_icon: "🌟"
+  
+  # Default model settings
+  default_model: "models/gemini-2.5-flash"
+  default_temperature: 0.2
+  fallback_temperature: 0.3
+  
+  # Vector store settings
+  default_index: "robotics-docs"
+  similarity_search_k: 3
+  
+  # Chat settings
+  max_chat_history: 5
+  
+  # Image search settings
+  max_images: 5
+  
+  # YouTube processing settings
+  youtube_transcript_url: "https://youtubetotranscript.com/transcript"
+
+# Available Models
+models:
+  - "models/gemini-2.5-flash-lite"
+  - "models/gemini-2.5-flash"
+  - "models/gemini-2.5-pro"
+
+# Available Document Indexes
+document_indexes:
+  - "robotics-docs"
+
+# UI Configuration
+ui_config:
+  # Color scheme
+  primary_color: "#47fffc"
+  secondary_color: "#dcfa2f"
+  success_color: "#4CAF50"
+  warning_color: "#f44336"
+  
+  # Animation settings
+  gradient_animation_duration: "20s"
+  
+  # Chat message styling
+  user_avatar: "👼"
+  assistant_avatar: "🧑‍🏫"
